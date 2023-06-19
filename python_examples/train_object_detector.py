@@ -61,12 +61,20 @@ options.add_left_right_image_flips = True
 # few different C values and see what works best for your data.
 options.C = 5
 # Tell the code how many CPU cores your computer has for the fastest training.
-options.num_threads = 4
+#options.num_threads = 4
+#options.num_threads = 2
+#options.num_threads = 1
+
+options.num_threads = 2
 options.be_verbose = True
 
 
-training_xml_path = os.path.join(faces_folder, "training.xml")
-testing_xml_path = os.path.join(faces_folder, "testing.xml")
+#training_xml_path = os.path.join(faces_folder, "training.xml")
+#testing_xml_path = os.path.join(faces_folder, "testing.xml")
+
+training_xml_path = os.path.join(faces_folder, "box_train.xml")
+testing_xml_path = os.path.join(faces_folder, "box_test.xml")
+
 # This function does the actual training.  It will save the final detector to
 # detector.svm.  The input is an XML file that lists the images in the training
 # dataset and also contains the positions of the face boxes.  To create your
@@ -93,7 +101,7 @@ print("Testing accuracy: {}".format(
 
 
 
-
+'''
 
 # Now let's use the detector as you would in a normal application.  First we
 # will load it from disk.
@@ -107,7 +115,12 @@ win_det.set_image(detector)
 # results.
 print("Showing detections on the images in the faces folder...")
 win = dlib.image_window()
-for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
+#for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
+imgs=list(glob.glob(os.path.join(faces_folder, "*.jpg")))
+
+
+ 
+for f in imgs[0:10]:
     print("Processing file: {}".format(f))
     img = dlib.load_rgb_image(f)
     dets = detector(img)
@@ -121,6 +134,7 @@ for f in glob.glob(os.path.join(faces_folder, "*.jpg")):
     win.add_overlay(dets)
     dlib.hit_enter_to_continue()
 
+
 # Next, suppose you have trained multiple detectors and you want to run them
 # efficiently as a group.  You can do this as follows:
 detector1 = dlib.fhog_object_detector("detector.svm")
@@ -130,7 +144,7 @@ detector2 = dlib.fhog_object_detector("detector.svm")
 # make a list of all the detectors you want to run.  Here we have 2, but you
 # could have any number.
 detectors = [detector1, detector2]
-image = dlib.load_rgb_image(faces_folder + '/2008_002506.jpg')
+image = dlib.load_rgb_image(faces_folder + '/test.jpg')
 [boxes, confidences, detector_idxs] = dlib.fhog_object_detector.run_multiple(detectors, image, upsample_num_times=1, adjust_threshold=0.0)
 for i in range(len(boxes)):
     print("detector {} found box {} with confidence {}.".format(detector_idxs[i], boxes[i], confidences[i]))
@@ -166,5 +180,6 @@ dlib.hit_enter_to_continue()
 # test_simple_object_detector().  If you have already loaded your training
 # images and bounding boxes for the objects then you can call it as shown
 # below.
-print("\nTraining accuracy: {}".format(
-    dlib.test_simple_object_detector(images, boxes, detector2)))
+print("\nTraining accuracy: {}".format(dlib.test_simple_object_detector(images, boxes, detector2)))
+
+''' 
