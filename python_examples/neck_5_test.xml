@@ -1,0 +1,907 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>iBUG face point dataset - training images</name>
+<comment>This folder contains data downloaded from:
+http://ibug.doc.ic.ac.uk/resources/facial-point-annotations/
+
+The dataset is actually a combination of the AFW, HELEN, iBUG, and LFPW
+face landmark datasets.  But the iBUG people have aggregated it all together
+and gave them a consistent set of 68 landmarks across all the images, thereby
+turning it into one big dataset.
+
+Note that we have adjusted the coordinates of the points from the MATLAB convention
+of 1 being the first index to 0 being the first index.  So the coordinates in this
+file are in the normal C 0-indexed coordinate system.
+
+We have also added left right flips (i.e. mirrors) of each image and also
+appropriately flipped the landmarks.  This doubles the size of the dataset.
+Each of the mirrored versions of the images has a filename that ends with
+_mirror.jpg.
+
+Finally, note that the bounding boxes are from dlib's default face detector.  For the
+faces the detector failed to detect, we guessed at what the bounding box would have been
+had the detector found it and used that.</comment>
+<images>
+  <image file='lfpw/trainset/image_0457.png' width='350' height='464'>
+    <!-- box top='78' left='74' width='138' height='140'-->
+    <box top='68' left='68' width='138' height='184'>
+
+      <part name='101' x='72' y='208'/>
+      <part name='102' x='75' y='258'/>
+      <part name='103' x='136' y='250'/>
+      <part name='104' x='154' y='208'/>
+      <part name='105' x='152' y='256'/>
+
+
+    </box>
+  </image>
+  <image file='helen/trainset/2659264056_1.jpg' width='576' height='768'>
+    <!--box top='130' left='31' width='447' height='447'-->
+    <box top='30' left='30' width='470' height='660'>
+
+      <part name='101' x='200' y='508'/>
+      <part name='102' x='220' y='678'/>
+      <part name='103' x='254' y='638'/>
+      <part name='104' x='460' y='534'/>
+      <part name='105' x='404' y='690'/>
+    </box>
+  </image>
+  <image file='helen/trainset/249852286_2.jpg' width='1169' height='1344'>
+    <!--box top='378' left='279' width='446' height='447' facial-point-annotations-->
+    <box top='270' left='160' width='560' height='700'>
+
+      <part name='101' x='300' y='774'/>
+      <part name='102' x='310' y='1010'/>
+      <part name='103' x='508' y='960'/>
+      <part name='104' x='646' y='818'/>
+      <part name='105' x='636' y='990'/>
+
+
+    </box>
+  </image>
+  <image file='afw/281972218_1.jpg' width='1383' height='1238'>
+    <!--box top='247' left='878' width='259' height='259' -->
+    <box top='188' left='878' width='360' height='480'>
+
+      <part name='101' x='960' y='500'/>
+      <part name='102' x='990' y='660'/>
+      <part name='103' x='1070' y='580'/>
+      <part name='104' x='1160' y='510'/>
+      <part name='105' x='1160' y='656'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2948551782_1.jpg' width='3072' height='2048'>
+    <!--box top='693' left='940' width='1110' height='1111' -->
+    <box top='450' left='940' width='1120' height='1500'>
+
+      <part name='101' x='1230' y='1560'/>
+      <part name='102' x='1300' y='1938'/>
+      <part name='103' x='1600' y='1900'/>
+      <part name='104' x='1930' y='1560'/>
+      <part name='105' x='1920' y='1938'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2418314368_1.jpg' width='1764' height='1500'>
+    <!--box top='544' left='687' width='642' height='643'-->
+    <box top='380' left='600' width='642' height='1020'>
+
+      <part name='101' x='730' y='1030'/>
+      <part name='102' x='780' y='1360'/>
+      <part name='103' x='980' y='1320'/>
+      <part name='104' x='1140' y='1160'/>
+      <part name='105' x='1050' y='1410'/>
+    </box>
+  </image>
+  <image file='afw/3662810723_1.jpg' width='3493' height='2724'>
+    <!--box top='645' left='1512' width='372' height='372' -->
+    <box top='600' left='1512' width='450' height='540'>
+
+      <part name='101' x='1600' y='988'/>
+      <part name='102' x='1600' y='1140'/>
+      <part name='103' x='1708' y='1092'/>
+      <part name='104' x='1856' y='972'/>
+      <part name='105' x='1840' y='1136'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2437510272_1.jpg' width='1200' height='1313'>
+    <!--box top='473' left='259' width='643' height='643'-->
+    <box top='370' left='210' width='800' height='830'>
+
+      <part name='101' x='400' y='1000'/>
+      <part name='102' x='460' y='1200'/>
+      <part name='103' x='580' y='1150'/>
+      <part name='104' x='780' y='1020'/>
+      <part name='105' x='720' y='1200'/>
+    </box>
+  </image>
+  <image file='helen/trainset/1312213009_1.jpg' width='1114' height='1114'>
+    <!--box top='356' left='356' width='373' height='373' -->
+     <box top='320' left='280' width='470' height='520'>
+      
+      <part name='101' x='412' y='650'/>
+      <part name='102' x='450' y='850'/>
+      <part name='103' x='570' y='776'/>
+      <part name='104' x='705' y='650'/>
+      <part name='105' x='667' y='850'/>
+    </box>
+  </image>
+  <image file='helen/trainset/200506188_1.jpg' width='766' height='902'>
+    <!--box top='331' left='193' width='311' height='311'-->
+    <box top='160' left='230' width='390' height='500'>
+
+      <part name='101' x='258' y='660'/>
+      <part name='102' x='270' y='740'/>
+      <part name='103' x='366' y='726'/>
+      <part name='104' x='506' y='650'/>
+      <part name='105' x='480' y='740'/>
+    </box>
+  </image>
+  <image file='ibug/image_097_1.jpg' width='620' height='388'>
+    <!--box top='22' left='238' width='317' height='328' -->
+    <box top='0' left='238' width='380' height='388'>
+
+
+      <part name='101' x='440' y='290'/>
+      <part name='102' x='490' y='388'/>
+      <part name='103' x='516' y='363'/>
+      <part name='104' x='600' y='288'/>
+      <part name='105' x='592' y='388'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2806176050_1.jpg' width='3072' height='2048'>
+    <!--box top='570' left='817' width='1110' height='1110' -->
+
+    <box top='390' left='817' width='1480' height='1600'>
+      
+      <part name='101' x='1176' y='1548'/>
+      <part name='102' x='1356' y='1960'/>
+      <part name='103' x='1470' y='1858'/>
+      <part name='104' x='1905' y='1554'/>
+      <part name='105' x='1725' y='1960'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0144.png' width='400' height='561'>
+    <!--box top='77' left='143' width='150' height='150'-->
+    <box top='60' left='100' width='175' height='200'>
+
+      <part name='101' x='150' y='194'/>
+      <part name='102' x='165' y='258'/>
+      <part name='103' x='210' y='234'/>
+      <part name='104' x='247' y='202'/>
+      <part name='105' x='232' y='260'/>
+    </box>
+  </image>
+  <image file='helen/testset/3226773050_1.jpg' width='852' height='683'>
+    <!--box top='228' left='262' width='311' height='310' -->
+     <box top='180' left='262' width='340' height='400'>
+
+      <part name='101' x='270' y='436'/>
+      <part name='102' x='276' y='585'/>
+      <part name='103' x='380' y='575'/>
+      <part name='104' x='514' y='494'/>
+      <part name='105' x='480' y='585'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0106.png' width='318' height='476'>
+    <!--box top='92' left='119' width='126' height='125'-->
+    <box top='58' left='100' width='166' height='200'>
+      
+      <part name='101' x='152' y='192'/>
+      <part name='102' x='172' y='258'/>
+      <part name='103' x='194' y='232'/>
+      <part name='104' x='234' y='194'/>
+      <part name='105' x='212' y='254'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2831234659_1.jpg' width='1543' height='1543'>
+    <!--box top='453' left='513' width='536' height='536'-->
+    <box top='360' left='400' width='700' height='600'>
+
+      <part name='101' x='536' y='824'/>
+      <part name='102' x='600' y='1150'/>
+      <part name='103' x='756' y='1076'/>
+      <part name='104' x='900' y='968'/>
+      <part name='105' x='830' y='1158'/>
+    </box>
+  </image>
+  <image file='helen/trainset/10405299_1.jpg' width='1488' height='1650'>
+    <!--box top='572' left='453' width='536' height='536'-->
+    <box top='390' left='450' width='670' height='750'>
+
+      <part name='101' x='504' y='915'/>
+      <part name='102' x='558' y='1136'/>
+      <part name='103' x='670' y='1095'/>
+      <part name='104' x='894' y='990'/>
+      <part name='105' x='810' y='1160'/>
+    </box>
+  </image>
+  <image file='helen/testset/3187824420_3.jpg' width='1969' height='2223'>
+    <!--box top='738' left='824' width='771' height='772'-->
+    <box top='640' left='750' width='850' height='1020'>
+
+      <part name='101' x='850' y='1370'/>
+      <part name='102' x='920' y='1660'/>
+      <part name='103' x='1250' y='1620'/>
+      <part name='104' x='1400' y='1410'/>
+      <part name='105' x='1300' y='1680'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0431.png' width='300' height='455'>
+    <!--box top='84' left='97' width='118' height='115'-->
+    <box top='70' left='97' width='143' height='160'>
+    
+      <part name='101' x='146' y='194'/>
+      <part name='102' x='160' y='228'/>
+      <part name='103' x='185' y='216'/>
+      <part name='104' x='220' y='166'/>
+      <part name='105' x='210' y='224'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0298.png' width='325' height='445'>
+    <!--box top='78' left='64' width='125' height='125' -->
+     <box top='58' left='64' width='160' height='200'>
+
+      <part name='101' x='100' y='200'/>
+      <part name='102' x='105' y='254'/>
+      <part name='103' x='132' y='233'/>
+      <part name='104' x='188' y='192'/>
+      <part name='105' x='172' y='258'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0800.png' width='300' height='450'>
+    <!--box top='112' left='92' width='180' height='180'-->
+    <box top='70' left='20' width='250' height='320'>
+
+      <part name='101' x='85' y='260'/>
+      <part name='102' x='112' y='388'/>
+      <part name='103' x='155' y='335'/>
+      <part name='104' x='194' y='302'/>
+      <part name='105' x='158' y='390'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2597444784_1.jpg' width='797' height='992'>
+    <!--box top='232' left='273' width='373' height='373'-->
+    <box top='200' left='220' width='420' height='560'>
+      
+      <part name='101' x='285' y='530'/>
+      <part name='102' x='324' y='720'/>
+      <part name='103' x='420' y='662'/>
+      <part name='104' x='550' y='594'/>
+      <part name='105' x='470' y='730'/>
+    </box>
+  </image>
+  <image file='lfpw/testset/image_0001.png' width='533' height='800'>
+    <!--box top='193' left='159' width='311' height='311'-->
+    <box top='180' left='100' width='370' height='420'>
+
+      <part name='101' x='180' y='446'/>
+      <part name='102' x='210' y='600'/>
+      <part name='103' x='280' y='554'/>
+      <part name='104' x='340' y='506'/>
+      <part name='105' x='310' y='600'/>
+    </box>
+  </image>
+  <image file='lfpw/testset/image_0231.png' width='407' height='600'>
+    <!--box top='160' left='126' width='151' height='150'-->
+    <box top='100' left='100' width='200' height='288'>
+
+      <part name='101' x='152' y='283'/>
+      <part name='102' x='185' y='385'/>
+      <part name='103' x='204' y='338'/>
+      <part name='104' x='260' y='288'/>
+      <part name='105' x='220' y='385'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0159.png' width='400' height='576'>
+    <!--box top='126' left='44' width='150' height='151'-->
+    <box top='120' left='0' width='214' height='240'>
+
+      <part name='101' x='52' y='260'/>
+      <part name='102' x='78' y='360'/>
+      <part name='103' x='110' y='310'/>
+      <part name='104' x='160' y='270'/>
+      <part name='105' x='140' y='360'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2308489181_3.jpg' width='939' height='938'>
+    <!--box top='297' left='297' width='310' height='310' -->
+     <box top='270' left='230' width='450' height='470'>
+
+      <part name='101' x='353' y='567'/>
+      <part name='102' x='402' y='735'/>
+      <part name='103' x='470' y='672'/>
+      <part name='104' x='584' y='570'/>
+      <part name='105' x='540' y='735'/>
+
+
+    </box>
+  </image>
+  <image file='helen/trainset/2282207808_1.jpg' width='1002' height='683'>
+    <!--box top='191' left='315' width='372' height='372'-->
+     <box top='150' left='315' width='565' height='526'>
+
+      <part name='101' x='490' y='616'/>
+      <part name='102' x='502' y='667'/>
+      <part name='103' x='550' y='640'/>
+      <part name='104' x='690' y='590'/>
+      <part name='105' x='630' y='670'/>
+    </box>
+  </image>
+  <image file='helen/trainset/110886318_1.jpg' width='600' height='732'>
+    <!--box top='90' left='159' width='311' height='311'-->
+    <box top='60' left='159' width='340' height='400'>
+
+      <part name='101' x='222' y='370'/>
+      <part name='102' x='240' y='450'/>
+      <part name='103' x='290' y='440'/>
+      <part name='104' x='370' y='402'/>
+      <part name='105' x='340' y='460'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0650.png' width='478' height='486'>
+    <!--box top='112' left='192' width='180' height='180'-->
+     <box top='65' left='140' width='240' height='300'>
+
+      <part name='101' x='192' y='268'/>
+      <part name='102' x='184' y='358'/>
+      <part name='103' x='232' y='326'/>
+      <part name='104' x='290' y='278'/>
+      <part name='105' x='245' y='360'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0804.png' width='299' height='408'>
+    <!--box top='92' left='119' width='126' height='125' -->
+    <box top='75' left='69' width='160' height='185'>
+
+      <part name='101' x='110' y='195'/>
+      <part name='102' x='120' y='260'/>
+      <part name='103' x='158' y='238'/>
+      <part name='104' x='194' y='202'/>
+      <part name='105' x='180' y='260'/>
+    </box>
+  </image>
+  <image file='afw/253915276_1.jpg' width='1469' height='1102'>
+    <!--box top='349' left='970' width='216' height='216' -->
+
+    <box top='320' left='880' width='306' height='350'>
+
+      <part name='101' x='960' y='534'/>
+      <part name='102' x='970' y='648'/>
+      <part name='103' x='1010' y='606'/>
+      <part name='104' x='1030' y='590'/>
+      <part name='105' x='1000' y='648'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0218.png' width='320' height='430'>
+    <!--box top='147' left='119' width='126' height='125'-->
+    <box top='110' left='119' width='170' height='210'>
+    
+      <part name='101' x='156' y='266'/>
+      <part name='102' x='178' y='313'/>
+      <part name='103' x='186' y='300'/>
+      <part name='104' x='220' y='265'/>
+      <part name='105' x='200' y='310'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2939528463_1.jpg' width='963' height='1280'>
+    <!--box top='334' left='97' width='536' height='536'-->
+
+    <box top='300' left='0' width='600' height='780'>
+      
+      <part name='101' x='166' y='858'/>
+      <part name='102' x='186' y='1080'/>
+      <part name='103' x='296' y='972'/>
+      <part name='104' x='380' y='1068'/>
+      <part name='105' x='400' y='848'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0052.png' width='650' height='964'>
+    <!--box top='219' left='161' width='259' height='259' -->
+    <box top='168' left='161' width='360' height='460'>
+    
+      <part name='101' x='250' y='453'/>
+      <part name='102' x='348' y='600'/>
+      <part name='103' x='325' y='515'/>
+      <part name='104' x='415' y='435'/>
+      <part name='105' x='400' y='600'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0424.png' width='403' height='399'>
+    <!--box top='77' left='126' width='151' height='150' -->
+
+    <box top='60' left='100' width='180' height='210'>
+
+      <part name='101' x='160' y='200'/>
+      <part name='102' x='188' y='275'/>
+      <part name='103' x='220' y='240'/>
+      <part name='104' x='258' y='190'/>
+      <part name='105' x='240' y='275'/>
+    </box>
+  </image>
+  <image file='helen/trainset/178046512_1.jpg' width='2592' height='3872'>
+    <!--box top='1003' left='376' width='1382' height='1362' -->
+    <box top='780' left='180' width='2060' height='2220'>
+      
+      <part name='101' x='968' y='2255'/>
+      <part name='102' x='1210' y='2760'/>
+      <part name='103' x='1340' y='2590'/>
+      <part name='104' x='1800' y='2220'/>
+      <part name='105' x='1560' y='2780'/>
+    </box>
+  </image>
+  <image file='ibug/image_091.jpg' width='964' height='619'>
+    <!--box top='111' left='456' width='105' height='105' -->
+    <box top='100' left='420' width='140' height='160'>
+
+      <part name='101' x='458' y='208'/>
+      <part name='102' x='458' y='250'/>
+      <part name='103' x='470' y='230'/>
+      <part name='104' x='510' y='200'/>
+      <part name='105' x='480' y='248'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0597.png' width='470' height='309'>
+    <!--box top='64' left='161' width='125' height='125' -->
+    <box top='40' left='161' width='180' height='200'>
+
+      <part name='101' x='190' y='175'/>
+      <part name='102' x='210' y='238'/>
+      <part name='103' x='218' y='215'/>
+      <part name='104' x='275' y='184'/>
+      <part name='105' x='255' y='245'/>
+    </box>
+  </image>
+  <image file='helen/testset/3084206931_1.jpg' width='858' height='797'>
+    <!--box top='108' left='356' width='373' height='373'-->
+     <box top='40' left='350' width='450' height='570'>
+          
+      <part name='101' x='458' y='440'/>
+      <part name='102' x='500' y='594'/>
+      <part name='103' x='520' y='538'/>
+      <part name='104' x='610' y='444'/>
+      <part name='105' x='560' y='606'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2830279146_1.jpg' width='1754' height='1365'>
+    <!--box top='396' left='225' width='771' height='771' -->
+    <box top='240' left='90' width='940' height='1120'>
+   
+      <part name='101' x='366' y='1100'/>
+      <part name='102' x='484' y='1360'/>
+      <part name='103' x='644' y='1244'/>
+      <part name='104' x='900' y='1050'/>
+      <part name='105' x='804' y='1360'/>
+   
+    </box>
+  </image>
+  <image file='helen/trainset/2719469475_1.jpg' width='2969' height='1980'>
+    <!-- box top='447' left='1063' width='1110' height='1110' -->
+     <box top='300' left='980' width='1220' height='1630'>
+
+      <part name='101' x='1236' y='1450'/>
+      <part name='102' x='1390' y='1872'/>
+      <part name='103' x='1680' y='1746'/>
+      <part name='104' x='1944' y='1480'/>
+      <part name='105' x='1800' y='1890'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2787024761_1.jpg' width='1328' height='1301'>
+    <!-- box top='328' left='427' width='447' height='447' -->
+
+    <box top='220' left='240' width='700' height='680'>
+
+      <part name='101' x='420' y='660'/>
+      <part name='102' x='504' y='906'/>
+      <part name='103' x='600' y='830'/>
+      <part name='104' x='790' y='700'/>
+      <part name='105' x='680' y='910'/>
+    </box>
+  </image>
+  <image file='helen/trainset/1418181204_1.jpg' width='667' height='843'>
+    <!--box top='108' left='108' width='373' height='373'-->
+
+     <box top='60' left='108' width='420' height='660'>
+    
+      <part name='101' x='225' y='498'/>
+      <part name='102' x='288' y='704'/>
+      <part name='103' x='310' y='540'/>
+      <part name='104' x='400' y='450'/>
+      <part name='105' x='360' y='700'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2848544488_1.jpg' width='1071' height='1345'>
+    <!--box top='378' left='328' width='447' height='447' -->
+    <box top='330' left='260' width='560' height='750'>
+
+      <part name='101' x='320' y='760'/>
+      <part name='102' x='380' y='1080'/>
+      <part name='103' x='460' y='920'/>
+      <part name='104' x='660' y='840'/>
+      <part name='105' x='480' y='1080'/>
+
+    </box>
+  </image>
+  <image file='lfpw/testset/image_0189.png' width='550' height='400'>
+    <!--box top='72' left='192' width='180' height='180'-->
+    <box top='72' left='160' width='200' height='250'>
+
+      <part name='101' x='220' y='230'/>
+      <part name='102' x='246' y='320'/>
+      <part name='103' x='290' y='274'/>
+      <part name='104' x='322' y='230'/>
+      <part name='105' x='300' y='320'/>
+    </box>
+  </image>
+  <image file='ibug/image_108.jpg' width='460' height='262'>
+    <!--box top='50' left='161' width='125' height='126'-->
+      <box top='40' left='161' width='170' height='210'>
+
+      <part name='101' x='210' y='175'/>
+      <part name='102' x='228' y='230'/>
+      <part name='103' x='236' y='205'/>
+      <part name='104' x='300' y='172'/>
+      <part name='105' x='260' y='228'/>
+    </box>
+  </image>
+  <image file='helen/trainset/173808384_1.jpg' width='981' height='982'>
+    <!--box top='273' left='315' width='372' height='373'-->
+    <box top='240' left='240' width='447' height='480'>
+
+      <part name='101' x='375' y='573'/>
+      <part name='102' x='440' y='688'/>
+      <part name='103' x='540' y='662'/>
+      <part name='104' x='605' y='572'/>
+      <part name='105' x='554' y='688'/>
+      
+    </box>
+  </image>
+  <image file='helen/trainset/148351850_1.jpg' width='1522' height='1523'>
+    <!--box top='453' left='453' width='536' height='536' -->
+    <box top='430' left='440' width='660' height='730'>
+
+      <part name='101' x='580' y='890'/>
+      <part name='102' x='640' y='1130'/>
+      <part name='103' x='750' y='1050'/>
+      <part name='104' x='940' y='900'/>
+      <part name='105' x='870' y='1150'/>
+    </box>
+  </image>
+  <image file='lfpw/testset/image_0211.png' width='500' height='335'>
+    <!--box top='44' left='159' width='119' height='122' -->
+     <box top='44' left='120' width='158' height='180'>
+      
+      <part name='101' x='164' y='156'/>
+      <part name='102' x='174' y='218'/>
+      <part name='103' x='205' y='192'/>
+      <part name='104' x='222' y='178'/>
+      <part name='105' x='210' y='214'/>
+      </box>
+  </image>
+  <image file='helen/trainset/15024375_1.jpg' width='1600' height='1200'>
+    <!--box top='-293' left='77' width='1110' height='1234'-->
+    <box top='0' left='77' width='1410' height='1200'>
+
+      
+      <part name='101' x='440' y='872'/>
+      <part name='102' x='600' y='1200'/>
+      <part name='103' x='780' y='1050'/>
+      <part name='104' x='1120' y='810'/>
+      <part name='105' x='900' y='1200'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2879755333_1.jpg' width='2000' height='2000'>
+    <!--box top='824' left='396' width='771' height='771'-->
+    <box top='680' left='250' width='1050' height='1230'>
+
+      
+      <part name='101' x='780' y='1608'/>
+      <part name='102' x='900' y='1910'/>
+      <part name='103' x='980' y='1700'/>
+      <part name='104' x='1200' y='1400'/>
+      <part name='105' x='1080' y='1900'/>
+    </box>
+  </image>
+  <image file='afw/2060241469_1.jpg' width='878' height='1323'>
+    <!--box top='490' left='199' width='245' height='231'-->
+
+    <box top='470' left='199' width='330' height='350'>
+
+      
+      <part name='101' x='296' y='704'/>
+      <part name='102' x='350' y='804'/>
+      <part name='103' x='368' y='772'/>
+      <part name='104' x='458' y='714'/>
+      <part name='105' x='390' y='802'/>
+    </box>
+  </image>
+  <image file='helen/trainset/1557684070_1.jpg' width='1953' height='1953'>
+    <!--box top='615' left='615' width='643' height='643'-->
+    <box top='500' left='615' width='800' height='1080'>
+ 
+       
+      <part name='101' x='730' y='1168'/>
+      <part name='102' x='800' y='1488'/>
+      <part name='103' x='850' y='1356'/>
+      <part name='104' x='1160' y='1260'/>
+      <part name='105' x='1030' y='1530'/>
+    </box>
+  </image>
+  <image file='helen/trainset/201752783_1.jpg' width='683' height='979'>
+    <!--box top='180' left='130' width='447' height='446'-->
+    <box top='140' left='130' width='480' height='540'>
+ 
+      <part name='101' x='263' y='530'/>
+      <part name='102' x='300' y='670'/>
+      <part name='103' x='360' y='620'/>
+      <part name='104' x='480' y='520'/>
+      <part name='105' x='410' y='680'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2446496284_2.jpg' width='1456' height='1456'>
+    <!--box top='477' left='477' width='447' height='447'-->
+
+    <box top='300' left='450' width='630' height='760'>
+
+      <part name='101' x='470' y='760'/>
+      <part name='102' x='480' y='1010'/>
+      <part name='103' x='608' y='976'/>
+      <part name='104' x='758' y='868'/>
+      <part name='105' x='610' y='1060'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2233231554_1.jpg' width='2038' height='2738'>
+    <!--box top='886' left='475' width='925' height='925'-->
+     <box top='636' left='300' width='1280' height='1764'>
+
+      <part name='101' x='608' y='1760'/>
+      <part name='102' x='788' y='2400'/>
+      <part name='103' x='960' y='2060'/>
+      <part name='104' x='1300' y='1720'/>
+      <part name='105' x='1200' y='2400'/>
+    </box>
+  </image>
+  <image file='helen/trainset/245871800_1.jpg' width='640' height='426'>
+    <!--box top='-57' left='67' width='373' height='414'-->
+    <box top='-100' left='0' width='600' height='414'>
+
+      <part name='101' x='120' y='370'/>
+      <part name='102' x='150' y='426'/>
+      <part name='103' x='254' y='422'/>
+      <part name='104' x='390' y='380'/>
+      <part name='105' x='360' y='426'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0757.png' width='602' height='894'>
+    <!--box top='232' left='191' width='372' height='373'-->
+    <box top='220' left='91' width='472' height='580'>
+
+      <part name='101' x='200' y='570'/>
+      <part name='102' x='230' y='810'/>
+      <part name='103' x='340' y='700'/>
+      <part name='104' x='380' y='646'/>
+      <part name='105' x='340' y='790'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2536681755_2.jpg' width='2068' height='2115'>
+    <!--box top='567' left='567' width='771' height='771'-->
+    <box top='447' left='567' width='940' height='1100'>
+
+      <part name='101' x='870' y='1350'/>
+      <part name='102' x='970' y='1530'/>
+      <part name='103' x='1010' y='1430'/>
+      <part name='104' x='1230' y='1314'/>
+      <part name='105' x='1170' y='1490'/>
+    </box>
+  </image>
+  <image file='lfpw/testset/image_0119.png' width='664' height='1024'>
+    <!--box top='63' left='110' width='216' height='216'-->
+     <box top='43' left='90' width='266' height='306'>
+
+
+      <part name='101' x='174' y='244'/>
+      <part name='102' x='188' y='330'/>
+      <part name='103' x='228' y='300'/>
+      <part name='104' x='282' y='250'/>
+      <part name='105' x='268' y='330'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0101.png' width='480' height='360'>
+    <!--box top='93' left='110' width='150' height='151'-->
+      <box top='53' left='90' width='180' height='220'>
+
+
+      <part name='101' x='140' y='220'/>
+      <part name='102' x='160' y='270'/>
+      <part name='103' x='190' y='244'/>
+      <part name='104' x='230' y='220'/>
+      <part name='105' x='220' y='266'/>
+    </box>
+  </image>
+  <image file='helen/testset/3030012395_1.jpg' width='2599' height='2909'>
+    <!--box top='817' left='817' width='1110' height='1110'-->
+    <box top='680' left='700' width='1230' height='1700'>
+
+      <part name='101' x='920' y='1660'/>
+      <part name='102' x='1050' y='2290'/>
+      <part name='103' x='1300' y='2050'/>
+      <part name='104' x='1560' y='1820'/>
+      <part name='105' x='1420' y='2300'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2304715356_1.jpg' width='877' height='683'>
+    <!--box top='26' left='273' width='373' height='372'-->
+    <box top='0' left='273' width='400' height='472'>
+
+      <part name='101' x='385' y='326'/>
+      <part name='102' x='440' y='455'/>
+      <part name='103' x='498' y='410'/>
+      <part name='104' x='610' y='320'/>
+      <part name='105' x='560' y='450'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2262722996_1.jpg' width='1013' height='785'>
+    <!--box top='67' left='315' width='372' height='373'-->
+    <box top='50' left='300' width='410' height='450'>
+
+      <part name='101' x='370' y='360'/>
+      <part name='102' x='410' y='460'/>
+      <part name='103' x='480' y='440'/>
+      <part name='104' x='590' y='400'/>
+      <part name='105' x='540' y='468'/>
+    </box>
+  </image>
+  <image file='helen/testset/297461011_1.jpg' width='921' height='1199'>
+    <!--box top='378' left='328' width='447' height='447'-->
+     <box top='300' left='300' width='500' height='700'>
+
+      <part name='101' x='420' y='773'/>
+      <part name='102' x='450' y='980'/>
+      <part name='103' x='570' y='888'/>
+      <part name='104' x='710' y='750'/>
+      <part name='105' x='660' y='980'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2941961941_1.jpg' width='3648' height='2736'>
+    <!--box top='346' left='772' width='1918' height='1918'-->
+    <box top='240' left='160' width='2540' height='2496'>
+
+      <part name='101' x='1268' y='2470'/>
+      <part name='102' x='1688' y='2720'/>
+      <part name='103' x='2024' y='2636'/>
+      <part name='104' x='2200' y='2424'/>
+      <part name='105' x='2124' y='2720'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2882168825_1.jpg' width='1373' height='1067'>
+    <!--box top='231' left='390' width='497' height='486'-->
+    <box top='231' left='390' width='710' height='800'>
+
+      <part name='101' x='560' y='740'/>
+      <part name='102' x='730' y='990'/>
+      <part name='103' x='690' y='840'/>
+      <part name='104' x='860' y='750'/>
+      <part name='105' x='820' y='980'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2533908657_2.jpg' width='1771' height='1981'>
+    <!--box top='653' left='653' width='771' height='771'-->
+    <box top='653' left='653' width='1000' height='1200'>
+
+      <part name='101' x='1026' y='1460'/>
+      <part name='102' x='1350' y='1900'/>
+      <part name='103' x='1290' y='1630'/>
+      <part name='104' x='1460' y='1420'/>
+      <part name='105' x='1520' y='1900'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2140513376_1.jpg' width='2267' height='1963'>
+    <!--box top='567' left='653' width='771' height='771'-->
+    <box top='447' left='653' width='1000' height='1400'>
+
+      <part name='101' x='870' y='1270'/>
+      <part name='102' x='1030' y='1830'/>
+      <part name='103' x='1070' y='1500'/>
+      <part name='104' x='1350' y='1300'/>
+      <part name='105' x='1240' y='1830'/>
+    </box>
+  </image>
+  <image file='helen/testset/3036412907_5.jpg' width='891' height='891'>
+    <!--box top='262' left='297' width='310' height='311'-->
+    <box top='210' left='200' width='460' height='430'>
+
+      <part name='101' x='340' y='510'/>
+      <part name='102' x='360' y='610'/>
+      <part name='103' x='450' y='585'/>
+      <part name='104' x='530' y='530'/>
+      <part name='105' x='490' y='620'/>
+    </box>
+  </image>
+  <image file='helen/trainset/1240101737_1.jpg' width='2865' height='2592'>
+    <!--box top='783' left='886' width='925' height='926'-->
+    <box top='600' left='886' width='1250' height='1700'>
+
+      <part name='101' x='1140' y='1600'/>
+      <part name='102' x='1240' y='2300'/>
+      <part name='103' x='1460' y='1880'/>
+      <part name='104' x='1780' y='1580'/>
+      <part name='105' x='1680' y='2300'/>
+    </box>
+  </image>
+  <image file='helen/testset/3035040633_1.jpg' width='686' height='1009'>
+    <!--box top='232' left='108' width='373' height='373'-->
+    <box top='200' left='40' width='440' height='550'>
+
+      <part name='101' x='180' y='600'/>
+      <part name='102' x='240' y='750'/>
+      <part name='103' x='320' y='690'/>
+      <part name='104' x='410' y='608'/>
+      <part name='105' x='380' y='750'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0290.png' width='340' height='489'>
+    <!--box top='119' left='64' width='125' height='126'-->
+    <box top='70' left='60' width='180' height='260'>
+
+      <part name='101' x='90' y='245'/>
+      <part name='102' x='105' y='320'/>
+      <part name='103' x='116' y='280'/>
+      <part name='104' x='170' y='250'/>
+      <part name='105' x='155' y='320'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0329.png' width='435' height='600'>
+    <!--box top='126' left='143' width='150' height='151'-->
+     <box top='90' left='130' width='190' height='260'>
+
+      <part name='101' x='172' y='260'/>
+      <part name='102' x='190' y='330'/>
+      <part name='103' x='226' y='300'/>
+      <part name='104' x='280' y='262'/>
+      <part name='105' x='262' y='330'/>
+    </box>
+  </image>
+  <image file='helen/trainset/212960843_1.jpg' width='995' height='995'>
+    <!--box top='331' left='297' width='310' height='311'-->
+    <box top='251' left='290' width='450' height='500'>
+
+      <part name='101' x='400' y='600'/>
+      <part name='102' x='460' y='740'/>
+      <part name='103' x='480' y='656'/>
+      <part name='104' x='590' y='590'/>
+      <part name='105' x='540' y='730'/>
+    </box>
+  </image>
+  <image file='lfpw/trainset/image_0567.png' width='900' height='900'>
+    <!--box top='228' left='56' width='310' height='310'-->
+    <box top='180' left='0' width='390' height='520'>
+
+      <part name='101' x='30' y='495'/>
+      <part name='102' x='40' y='685'/>
+      <part name='103' x='160' y='630'/>
+      <part name='104' x='250' y='530'/>
+      <part name='105' x='200' y='700'/>
+    </box>
+  </image>
+  <image file='helen/trainset/2805324803_1.jpg' width='2787' height='2048'>
+    <!--box top='680' left='886' width='925' height='926'-->
+    <box top='600' left='886' width='1100' height='1400'>
+
+      <part name='101' x='1130' y='1590'/>
+      <part name='102' x='1180' y='1920'/>
+      <part name='103' x='1400' y='1850'/>
+      <part name='104' x='1650' y='1650'/>
+      <part name='105' x='1600' y='1910'/>
+    </box>
+  </image>
+  <image file='helen/trainset/173153769_1.jpg' width='908' height='909'>
+    <!--box top='276' left='333' width='259' height='259'-->
+    <box top='230' left='240' width='360' height='570'>
+
+      <part name='101' x='365' y='540'/>
+      <part name='102' x='400' y='660'/>
+      <part name='103' x='470' y='620'/>
+      <part name='104' x='550' y='540'/>
+      <part name='105' x='510' y='660'/>
+    </box>
+  </image>
