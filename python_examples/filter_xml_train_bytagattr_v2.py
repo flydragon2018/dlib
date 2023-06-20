@@ -79,8 +79,8 @@ print(unanno_train_data)
 
 cnt=0
  
-
-for img in root.findall('.//image'):
+images=root.findall('.//image')
+for img in images:
     cnt+=1
    
     #print(img.attrib)
@@ -93,8 +93,8 @@ for img in root.findall('.//image'):
         #print('\n')
         #print(k)
         if str(kk)==str(f):
-            print(k,f)
-            img.remove(img)
+            print(kk,f)
+            images.remove(img)
             print("node removed! \n")
     
     #for img in imgs:
@@ -105,9 +105,10 @@ for img in root.findall('.//image'):
     #if cnt==1:
     #   break
      
- 
+print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+print(len(images))
 
-#ET.dump(root)
+#ET.dump(img)
 
 
  
