@@ -185,13 +185,26 @@ for child in root:
                 for k,v in ggchild.attrib.items():
                     print(k,v)
                     gg_elem.set(k,v)
-        
+                
+                for gggchild in ggchild:
+                    print(gggchild.tag,gggchild.attrib)
 
-b_xml = ET.tostring(root3)
+                    ggg_elem=ET.SubElement(gg_elem,gggchild.tag)
+
+                    for k,v in gggchild.attrib.items():
+                        print(k,v)
+                        ggg_elem.set(k,v)
+
+from xml.dom import minidom
+
+xmlstr = minidom.parseString(ET.tostring(root3)).toprettyxml(indent="   ")
+
+#b_xml = ET.tostring(root3)
  
 # Opening a file under the name `items2.xml`,
 # with operation mode `wb` (write + binary)
 with open("root3_dataset.xml", "w") as f:
-    f.write(b_xml.decode('utf-8'))
+    #f.write(b_xml.decode('utf-8'))
+    f.write(xmlstr)
 
 #decode('utf-8')
